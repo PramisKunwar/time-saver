@@ -1,38 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Time Value Calculator</title>
-    <link rel ="stylesheet" href="popup.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Time Value Calculator</title>
+  <link rel="stylesheet" href="popup.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">YouTube Time Value Calculator</h1>
+  <div class="container">
+    <!-- Header -->
+    <h1 class="title">⏱️ YouTube Time Value Calculator</h1>
 
-        <div class="section">
-            <label for="hourlyRate">Your Hourly Rate ($)</label>
-            <div class="input-row">
-                <input type="number" id="hourlyRate" min="0" step="0.01" placeholder="e.g. 15.00">
-                <button id="saveRate">Save Rate</button>
-            </div>
-            <p id="saveMessage" class="save-message"></p>
-        </div>
-
-        <div class="section">
-            <h2>This Week</h2>
-            <p>Time Watched: <strong id ="weeklyCost"> $0.00</strong> </p>
-        </div>
-
-        <!-- Monthly Estimate-->
-         <div class="section">
-            <h2>Estimate Monthly Cost</h2>
-            <p class="big-number" id="monthlyCost">$0.00</p>
-         </div>
-
-         <button id="resetBtn" class="reset-btn">Reset All Data</button>
+    <!-- Hourly Rate Section -->
+    <div class="section">
+      <label for="hourlyRate">Your Hourly Rate ($)</label>
+      <div class="input-row">
+        <input type="number" id="hourlyRate" min="0" step="0.01" placeholder="e.g. 15.00">
+        <button id="saveRate">Save</button>
+      </div>
+      <p id="saveMessage" class="save-message"></p>
     </div>
 
-    <script src="popup.js"></script>
+    <!-- This Week Summary -->
+    <div class="section">
+      <h2>📅 This Week</h2>
+      <p>Time Watched: <strong id="weeklyTime">0 minutes</strong></p>
+      <p>Cost: <strong id="weeklyCost">$0.00</strong></p>
+    </div>
+
+    <!-- Monthly Estimate -->
+    <div class="section">
+      <h2>📆 Estimated Monthly Cost</h2>
+      <p class="big-number" id="monthlyCost">$0.00</p>
+    </div>
+
+    <!-- Reset Button -->
+    <button id="resetBtn" class="reset-btn">Reset All Data</button>
+  </div>
+
+  <script src="popup.js"></script>
 </body>
 </html>

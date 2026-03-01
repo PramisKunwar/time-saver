@@ -1,3 +1,1 @@
-This is a chrome extension which lets you save time watched on youtube by simply telling you how much you have spent.
-
-
+This extension deals with problem everyone faces in this current world, that is distraction which is one of the most ongrowing issue in todays world. This extension specifically deals with the procrastination on youtube by scrolling too much. This extension makes the time spend process into money spend process like X$/hour. Initially the user set how much money/hour they want to set, after that this extension measures how much the user has spent time on youtube and then calculates the total money spent of the day, week, and month. 

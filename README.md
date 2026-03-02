@@ -18,15 +18,15 @@ Cost = (Time Watched in Hours) * Hourly Rate
 
 ## Project Structure
 
-├── time-saver/
+```
+├──time-saver/
 │       ├── manifest.json           # Extension config (Manifest V3)
 │       ├── popup.html              # Popup UI (hourly rate + summaries)
 │       ├── popup.css               # Popup styling
 │       ├── popup.js                # Popup logic (save rate, display stats)
 │       ├── content.js              # Content script (runs on YouTube)
 │       └── icon.png                # Extension icon
-
----
+```
 
 ---
 

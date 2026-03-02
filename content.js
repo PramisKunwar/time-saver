@@ -3,11 +3,11 @@
 // It tracks how long the user watches videos and shows a floating cost overlay.
 
 // --- State Variables ---
-let secondsWatched = 0;       // Seconds watched on current video
-let isPlaying = false;         // Is the video currently playing?
-let timerInterval = null;      // Reference to the setInterval timer
-let currentVideoId = null;     // Track which video we're on
-let hourlyRate = 10;           // Default hourly rate
+let secondsWatched = 0;       
+let isPlaying = false;         
+let timerInterval = null;      
+let currentVideoId = null;    
+let hourlyRate = 10;           
 
 // --- Load the user's hourly rate from storage ---
 chrome.storage.local.get(["hourlyRate"], (data) => {

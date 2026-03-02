@@ -1,6 +1,4 @@
 // ===== popup.js =====
-// Handles the extension popup UI: loading/saving hourly rate,
-// displaying weekly and monthly cost estimates.
 
 // Wait for popup HTML to load
 document.addEventListener("DOMContentLoaded", () => {
